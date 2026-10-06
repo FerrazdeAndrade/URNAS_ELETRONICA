@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Urna Eletrônica - Simulação</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="urna">
+
+        <header>
+            <h1>URNA ELETRÔNICA</h1>
+            <p>SIMULAÇÃO EDUCACIONAL</p>
+        </header>
+
+
+        <main id="tela">
+
+            <section class="cabecalho-voto">
+
+                <p id="cargo">
+                    VOTO 1
+                </p>
+
+                <h2 id="tipoVoto">
+                    GOVERNADOR
+                </h2>
+
+            </section>
+
+
+            <section class="display">
+
+                <div class="numero">
+                    <span id="digito1"></span>
+                    <span id="digito2"></span>
+                </div>
+
+
+                <div id="candidato" class="candidato">
+
+                    <img id="foto"
+                         src=""
+                         alt="Foto do candidato">
+
+                    <div class="informacoes">
+
+                        <h2 id="nome">
+                            Digite o número
+                        </h2>
+
+                        <p id="partido">
+                            Número: 22
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="teclado">
+
+                <button onclick="digitar(1)">1</button>
+                <button onclick="digitar(2)">2</button>
+                <button onclick="digitar(3)">3</button>
+
+                <button onclick="digitar(4)">4</button>
+                <button onclick="digitar(5)">5</button>
+                <button onclick="digitar(6)">6</button>
+
+                <button onclick="digitar(7)">7</button>
+                <button onclick="digitar(8)">8</button>
+                <button onclick="digitar(9)">9</button>
+
+                <button class="zero" onclick="digitar(0)">
+                    0
+                </button>
+
+            </section>
+
+
+            <section class="botoes">
+
+                <button class="branco"
+                        onclick="branco()">
+                    BRANCO
+                </button>
+
+                <button class="corrige"
+                        onclick="corrigir()">
+                    CORRIGE
+                </button>
+
+                <button class="confirma"
+                        onclick="confirmar()">
+                    CONFIRMA
+                </button>
+
+            </section>
+
+        </main>
+
+
+        <section id="fim" class="fim">
+
+            <h1>FIM</h1>
+
+            <p>
+                VOTAÇÃO ENCERRADA
+            </p>
+
+            <p>
+                Seus votos foram registrados.
+            </p>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

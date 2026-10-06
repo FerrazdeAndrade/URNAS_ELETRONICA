@@ -1,0 +1,401 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #d5d5d5;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px;
+}
+
+
+.urna {
+    width: 100%;
+    max-width: 850px;
+
+    background: #eeeeee;
+
+    border: 5px solid #222;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+
+header {
+    background: #333;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 18px;
+}
+
+
+header h1 {
+    font-size: 30px;
+}
+
+
+header p {
+    margin-top: 5px;
+
+    font-size: 13px;
+}
+
+
+#tela {
+    padding: 20px;
+}
+
+
+.cabecalho-voto {
+    background: white;
+
+    border: 2px solid #333;
+
+    padding: 15px;
+
+    text-align: center;
+
+    margin-bottom: 15px;
+}
+
+
+.cabecalho-voto p {
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+.cabecalho-voto h2 {
+    margin-top: 5px;
+
+    font-size: 28px;
+}
+
+
+.display {
+    background: white;
+
+    border: 3px solid #333;
+
+    min-height: 260px;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+}
+
+
+.numero {
+    min-height: 65px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 50px;
+
+    font-weight: bold;
+}
+
+
+.numero span {
+    width: 60px;
+
+    height: 65px;
+
+    border: 3px solid #333;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: white;
+}
+
+
+.candidato {
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 15px;
+}
+
+
+.candidato.mostrar {
+    display: flex;
+}
+
+
+.candidato img {
+    width: 130px;
+
+    height: 150px;
+
+    object-fit: cover;
+
+    border: 3px solid #333;
+
+    border-radius: 5px;
+}
+
+
+.informacoes h2 {
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+
+.informacoes p {
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+.teclado {
+    background: #222;
+
+    padding: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+
+    max-width: 400px;
+
+    margin: auto;
+
+    border-radius: 10px;
+}
+
+
+.teclado button {
+    height: 65px;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    border: 2px solid #111;
+
+    background: #555;
+
+    color: white;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+.teclado button:active {
+    transform: scale(0.94);
+
+    background: #777;
+}
+
+
+.teclado .zero {
+    grid-column: 2;
+}
+
+
+.botoes {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+
+.botoes button {
+    padding: 18px 20px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    border: 2px solid #222;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+}
+
+
+.branco {
+    background: white;
+}
+
+
+.corrige {
+    background: #e8c400;
+}
+
+
+.confirma {
+    background: #22963d;
+
+    color: white;
+}
+
+
+.botoes button:active {
+    transform: scale(0.95);
+}
+
+
+.fim {
+    display: none;
+
+    min-height: 500px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    background: white;
+}
+
+
+.fim h1 {
+    font-size: 80px;
+
+    margin-bottom: 25px;
+}
+
+
+.fim p {
+    font-size: 22px;
+
+    margin: 5px;
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 5px;
+    }
+
+
+    .urna {
+        border-width: 3px;
+    }
+
+
+    header h1 {
+        font-size: 23px;
+    }
+
+
+    #tela {
+        padding: 10px;
+    }
+
+
+    .cabecalho-voto h2 {
+        font-size: 23px;
+    }
+
+
+    .display {
+        min-height: 230px;
+
+        padding: 10px;
+    }
+
+
+    .candidato {
+        gap: 12px;
+    }
+
+
+    .candidato img {
+        width: 95px;
+
+        height: 115px;
+    }
+
+
+    .informacoes h2 {
+        font-size: 20px;
+    }
+
+
+    .informacoes p {
+        font-size: 18px;
+    }
+
+
+    .numero span {
+        width: 50px;
+
+        height: 55px;
+
+        font-size: 40px;
+    }
+
+
+    .teclado button {
+        height: 58px;
+
+        font-size: 25px;
+    }
+
+
+    .botoes {
+        flex-direction: column;
+    }
+
+
+    .botoes button {
+        width: 100%;
+    }
+
+
+    .fim h1 {
+        font-size: 60px;
+    }
+}
